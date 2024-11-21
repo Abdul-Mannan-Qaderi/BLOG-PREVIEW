@@ -1,0 +1,110 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+:root {
+	--yellow: hsl(47, 88%, 63%);
+	--white: hsl(0, 0%, 100%);
+	--lightgray: hsl(0, 0%, 42%);
+	--darkgray: hsl(0, 0%, 7%);
+}
+/*  Desktop: 1440px */
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	background-color: var(--yellow);
+	height: 100vh;
+	width: 100%;
+	font-family: "Figtree";
+}
+
+.card {
+	position: absolute;
+	background-color: var(--white);
+	width: 377px;
+	height: fit-content;
+	padding: 20px;
+	border-radius: 20px;
+	border: 1px solid black;
+	box-shadow: 7px 7px 1px 0 black;
+	margin: auto;
+	inset: 0;
+}
+
+svg {
+	border-radius: 10px;
+}
+
+.image {
+	width: fit-content;
+	height: fit-content;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.learning {
+	display: block;
+	padding: 5px 10px;
+	background-color: var(--yellow);
+	border: none;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	font-weight: 700;
+}
+.published {
+	display: block;
+	letter-spacing: 0px;
+	font-weight: 400;
+}
+
+.heading {
+	margin: 20px 0;
+	font-weight: 700;
+}
+
+.heading,
+.published,
+.learning,
+.user {
+	color: var(--darkgray);
+}
+
+.user {
+	font-weight: 700;
+	letter-spacing: -0.5px;
+}
+
+.pargraph {
+	color: var(--lightgray);
+	line-height: 1.6;
+	margin-bottom: 20px;
+}
+
+.bottom-row {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 15px;
+}
+
+/* MOBILE DESNG: for screens below  375px*/
+
+@media only screen and (max-width: 375px) {
+	.card {
+		width: 100%;
+	}
+}
